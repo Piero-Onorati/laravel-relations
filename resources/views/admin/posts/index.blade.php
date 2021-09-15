@@ -37,6 +37,7 @@
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Title</th>
+                <th scope="col">Category</th>
                 <th scope="col" class="text-center">Action</th>
               </tr>
             </thead>
@@ -45,6 +46,11 @@
                     <tr>
                         <th scope="row">{{$post->id}}</th>
                         <td>{{$post->title}}</td>
+                        <td>
+                            @if ($post->category)
+                                {{$post->category->name}}
+                            @endif
+                        </td>
                         <td class="text-center">
                             <a class="btn btn-primary" href="{{route('admin.posts.show', $post->id)}}">Show</a>
                             <a class="btn btn-secondary" href="{{route('admin.posts.edit', $post->id)}}">Edit</a>
