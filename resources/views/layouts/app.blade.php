@@ -69,7 +69,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <a href="{{route('admin.category_page')}}" class="nav-link px-0 align-middle ">
                                         <i class="bi bi-grid" style="font-size:1.1rem"></i> 
                                         <h6 class="ms-2 d-none d-sm-inline">Categories</h6>
                                     </a>

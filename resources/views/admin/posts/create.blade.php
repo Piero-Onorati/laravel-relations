@@ -22,7 +22,7 @@
             <div class="mb-3">
                 <label class="visually-hidden" for="category_post">Category</label>
                 <select name="category_id" class="form-select form-control" id="category_post">
-                  <option>Choose category...</option>
+                  <option value="">Choose category...</option>
                   @foreach ($categories as $category)
                     <option value="{{$category->id}}"
                         @if ($category->id == old('category_id'))

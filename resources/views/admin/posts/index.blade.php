@@ -46,7 +46,7 @@
                     <tr>
                         <th scope="row">{{$post->id}}</th>
                         <td>{{$post->title}}</td>
-                        <td>
+                        <td class="text-uppercase">
                             @if ($post->category)
                                 {{$post->category->name}}
                             @endif
